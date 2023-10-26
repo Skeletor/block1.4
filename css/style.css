@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "TTLakes-Medium";
+    src: url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    src: url('../fonts/TTLakes-Medium.woff') format('woff');
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    font-family: "TTLakes-Medium";
+    font-size: 16px;
+}
+
+.main-menu {
+    background-color: #fff;
+    width: 320px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-menu__header {
+    display: flex;
+}
+
+.header__item {
+    padding: 20px;
+}
+
+.header__item:nth-child(2) {
+    padding-left: 0px;
+}
+
+.header__item:nth-child(3) {
+    padding-left: 15%;
+}
+
+.main-menu__list {
+    overflow: none;
+    list-style: none;
+    color: black;
+    padding: 0;
+    margin: 15px;
+}
+
+.list__item {
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.list__item-active {
+    color: #7E7E82;
+}
+
+.list__item-active::before {
+    /*border: 2px solid red;*/
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 40px;
+    width: 4px;
+    background: url("../img/highlight.svg") no-repeat;
+    position: relative;
+    left: -15px;
+}
+
+.image-button {
+    padding: 10px;
+    padding-left: 15px;
+}
+
+.footer__mail {
+    padding-left: 15px;
+}
+
+.footer__phone-number {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.footer__lang-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+}
+
+.lang-list__item {
+    font-size: 16px;
+    padding-right: 15px;
+}
+
+.lang-list__item-active {
+    color: #7E7E82;
+}
+
+.list__item:hover,
+.lang-list__item:hover {
+    opacity: 0.8;
+}
+
+.button {
+    transition: 0.8s;
+}
+
+.button:not(.header__item:nth-child(2)):hover {
+    filter: drop-shadow(0 0 10px red);
+}
