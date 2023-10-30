@@ -16,12 +16,13 @@ body {
 .main-menu {
     background-color: #fff;
     width: 320px;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 0;
     display: flex;
     flex-direction: column;
-
+    box-shadow: 10px 0 25px -5px #676767;
 }
 
 .main-menu__header {
@@ -55,10 +56,10 @@ body {
 
 .list__item-active {
     color: #7E7E82;
+    margin-left: -5px;
 }
 
 .list__item-active::before {
-    /*border: 2px solid red;*/
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -66,7 +67,7 @@ body {
     width: 4px;
     background: url("../img/highlight.svg") no-repeat;
     position: relative;
-    left: -15px;
+    left: -10px;
 }
 
 .image-button {
@@ -105,6 +106,7 @@ body {
 .list__item:hover,
 .lang-list__item:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .button {
@@ -113,4 +115,5 @@ body {
 
 .button:not(.header__item:nth-child(2)):hover {
     filter: drop-shadow(0 0 10px red);
+    cursor: pointer;
 }
